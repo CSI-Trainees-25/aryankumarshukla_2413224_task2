@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List with Timer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Task +</h1>
+    <button onclick="addTask()">+ Add Task</button>
+  </header>
+  <div class="task-stats">
+    <span id="totalTasks">0 Task</span>
+    <span id="inProgressTasks">0 In progress</span>
+    <span id="doneTasks">0 Done</span>
+  </div>
+  <div class="container">
+    <div class="tasks" id="taskList"></div>
+    <div class="sidebar">
+      <h3>Do Now (<span id="doNowCount">0</span>/5)</h3>
+      <div id="doNowList"></div>
+      <div id="timerSection">
+        <button onclick="setTimer()">Set Timer</button>
+        <div id="timerDisplay"></div>
+        <div class="timer-controls" style="display:none;" id="timerControls">
+          <button onclick="startTimer()">Start</button>
+          <button onclick="pauseTimer()">Pause</button>
+          <button onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
