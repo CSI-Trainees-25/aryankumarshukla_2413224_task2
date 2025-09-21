@@ -1,9 +1,117 @@
 *{
- margin:0%;
- paddding:0%;
- box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
-html,body{
-  width:100%;
-  height:100%;
+body {
+    font-family: Arial, sans-serif;
+    background: #120012;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #7000b0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    }
+header button {
+    background: #9a00ff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+.task-stats {
+    text-align: right;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;
+    }
+.container {
+    display: flex;
+    margin: 20px;
+    }
+.tasks {
+    flex: 2;
+    margin-right: 20px;
+    }
+.task {
+    background: white;
+    color: black;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+ }
+.task select, .task input {
+    margin: 5px;
+    padding: 5px;
+    }
+.task button {
+    background: #7000b0;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.sidebar {
+    flex: 1;
+    background: black;
+    border: 2px solid #7000b0;
+    padding: 15px;
+    border-radius: 10px;
+}
+.status { 
+    padding: 3px 8px; 
+    border-radius: 6px; 
+    color: white; 
+    font-size: 13px;
+}
+.done { 
+    background: green; 
+}
+.in-progress { 
+    background: blue; 
+}
+.not-started { 
+    background: gray; 
+}
+.priority { 
+    padding: 3px 8px; 
+    border-radius: 6px; 
+    font-size: 13px; 
+    color: white;
+}
+.high { 
+    background: red; 
+}
+.medium { 
+    background: orange; 
+}
+.low { 
+    background: #666; 
+}
+.timer-controls button {
+    margin-top: 8px;
+    margin-right: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #9a00ff;
+    color: white;
+    cursor: pointer;
+}
+#timerDisplay {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
 }
