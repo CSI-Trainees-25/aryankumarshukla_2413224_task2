@@ -20,3 +20,8 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
       });
       saveTasks();
     }
+function updateTask(index, field, value) {
+      tasks[index][field] = value;
+      saveTasks();
+    }
+
